@@ -1,137 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <title>Victor Stephen</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>My Portfolio</title>
 </head>
-<body>  
-      <section>
-       <nav class="navbar">
-         <ul class="navlogo">
-            <li>
-               <a href="">VICTOR STEPHEN</a>
-            </li>
-            <button class="menu-toggle" id="menu-toggle">&#9776</button>
 
-         </ul>
-        <ul class="navlinks">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="">PROJECTS</a></li>
-            <li><a href="#contact">CONTACT</a></li>
-        </ul>
-       </nav>
-    
+<body>
+    <header>
+        <a href="#" class="logo">VICTOR.</a>
 
-    <main>
-         <!-- HERO SECTION -->
-          <h2 class="hero">Front-End Web <span class="heroh">Developer...</span></h2>
+        <i class='bx bx-menu' id="menu-icon"></i>
 
-          <!-- REMEMBER TO ADD YOUR PHOTO HERE -->
-          <img src="" alt="">
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-         <div class="box1">
-            <ul>
-                <li><h3>I build professional websites that combine clean design withe relaiable performance</h3></li>
-                <li><h3>I specialize in designing and devloping responsive,    user-friendly websites</h3></li>
-          </ul>
-         </div>
+    <!-- HOME SECTION DESIGN -->
 
-          <div >
-            <ul class="btn">
-               <li><a class="btn1" href="#contact">Contact me</a></li>
-            </ul>
-          </div>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>I'm</h3>
+            <h1>Victor Stephen</h1>
+            <h3>And i'm a <span>Frontend Developer </span></h3>
+            <p>I build professional websites that combine clean design with
+                relaiable performance</p>
+            <!-- SOACIAL MEDIA ICONS -->
+            <div class="socail-media">
+                <a href="#"><i class='bx bxl-github'></i></a>
+                <a href="#"><i class='bx bxl-upwork'></i></a>
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+            </div>
+            <a href="#" class="btn">Download CV</a>
+        </div>
 
-            
-            <!-- Technical Skills Section -->
-            <section class="skills">
-               <h2>Technical Skills</h2>
-            
-               <div class="skills-container">
-                  <div class="skill-box">
-                     <span class="skill-icon"><img src="./Assets/logo-html5.svg" width="40px" alt=""></span>
-                     <h3>HTML5</h3>
-                     <p>Semantic markup, forms, and accessibility and more</p>
-                  </div>
-            
-                  <div class="skill-box">
-                     <span class="skill-icon"> <img src="./Assets/logo-css3.svg" width="40px"></span>
-                     <h3>CSS3</h3>
-                     <p>Flexbox, Grid, responsive layouts, animations.</p>
-                  </div>
-            
-                  <div class="skill-box">
-                     <span class="skill-icon"><img src="./Assets/logo-javascript.svg" width="40px" alt=""></span>
-                     <h3>JavaScript</h3>
-                     <p>Basic DOM manipulation,React basics </p>
-                  </div>
-               </div>
-            
-               <div class="learning">
-                  <h3>Currently Learning</h3>
-                  <p>ES6 syntax., JavaScript ES6+, building interactive websites.</p>
-               </div>
-            </section>
+        <div class="home-img">
+            <img src="./assets/main.png" width="100%" alt="">
+        </div>
+    </section>
 
+    <!-- ABOUT SECTION -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="./assets/main.png" alt="">
+        </div>
 
-                               <!-- ABOUT SECTION -->
-         <section>
-            <div id="about" class="about">
-                <h2 >ABOUT ME</h2>
-               <h3><p>I'm Victor Stephen, a passionate front-end developer and tech     entrepreneur in the making. I specialize in creating clean, modern, and user-friendly websites that don't just look good but work seamlessly.
-               Beyond coding, I'm building my brand, <span class="comp">VEENECT</span> , with a vision to innovate in the software space. My goal is simple, craft digital experiences and solutions that help people and businesses thrive.
-              </p></h3>
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Frontend Developer</h3>
+            <p>I'm Victor Stephen, a passionate front-end developer and tech entrepreneur in the making. I specialize in
+                creating clean, modern, and user-friendly websites that don't just look good but work seamlessly.
+                Beyond coding, I'm building my brand,VEENECT , with a vision to innovate in the software space. My goal
+                is simple, craft digital experiences and solutions that help people and businesses thrive.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </section>
+
+    <!-- SERVICE SECTION -->
+    <section>
+        <div class="services" id="services">
+            <h2 class="heading">Our <span>Services</span></h2>
+
+            <div class="services-container">
+                <div class="services-box">
+                    <i class='bx bx-code-alt'></i>
+                    <h3>Web Development</h3>
+                    <p>Respnsive, fast and modern websites</p>
+                    <details>
+                        <summary class="btn">Read more</summary>
+                        <p>
+                            "I create fuctional and user-friendly websites tailored to your needs, using clean code and
+                            respnsive design so your site looks great on any device"
+                        </p>
+                    </details>
+                </div>
+
+                <div class="services-box">
+                    <i class='bx bxs-paint'></i>
+                    <h3>Graphic Design</h3>
+                    <p>Creative designs that stand out</p>
+                    <details>
+                        <summary class="btn">Read more</summary>
+                        <p>
+                            "i design visually appealing graphics, logos, and layouts that communicate your brand's
+                            message and leave a lasting impression"
+                        </p>
+                    </details>
+                </div>
+
+                <div class="services-box">
+                    <i class='bx bx-code-alt'></i>
+                    <h3>website Optimization</h3>
+                    <p>Speed, SEO, and performance</p>
+                    <details>
+                        <summary class="btn">Read more</summary>
+                        <p>
+                            "I improve website speed and performance files, and cleaning up code so your runs smoothly"
+                        </p>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO SECTION -->
+
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Project</span></h2>
+
+        <div class="porfolio-container">
+
+            <div class="portfolio-box">
+                <img src="./assets/first.png"  alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+                        aperiam.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
             </div>
 
+            <div class="portfolio-box">
+                <img src="./assets/second.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos 
+                        aperiam.
+                    </p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
 
-            <section>
-               <form id="contact" action="https://formsubmit.co/victetor.dev@gmail.com" method="POST">
-                 <input type="text" name="name" placeholder="Your Name" required>
-                 <input type="email" name="email" placeholder="Your Email" required>
-                 <textarea name="message" placeholder="Your Message" required></textarea>
-                 <button type="submit">Send</button>
-            </form>
-            </section>
-                  
-         </section>
+            <div class="portfolio-box">
+                <img src="./assets/third.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos 
+                        aperiam.
+                    </p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
 
-    </main>
-        
+            <div class="portfolio-box">
+                <img src="./assets/fourth.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                        aperiam.
+                    </p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                                      <!-- FOOTER -->
+    <!-- CONTACT SECTION -->
 
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
 
-    <footer class="footer-box">
-      <ul class="footer-h">
-         <li><a href="https://wa.me/2347035731997">Hire Me</a></li>
-      </ul>
-      <ul class="footer-link">
-         <li><a href="#">Homepage</a></li>
-         <li><a href="#">Products</a></li>
-         <li><a href="#">Services</a></li>
-         <li><a href="#">about Us</a></li>
-         <li><a href="#">Contact Us</a></li>
-      </ul>
+        <form id="contact" action="https://formsubmit.co/victetor.dev@gmail.com" method="POST">
+            <div class="inputbox">
+              <input type="text"  placeholder="Your Name" required>
+              <input type="email" placeholder="Your Email" required>
+            </div>
 
-      <ul class="footer-social" >
-         <li><a href=""><img src="./Assets/logo-github.svg" alt="logo-github" width="25px"></a></li>
-         <li><a href=""><img src="./Assets/logo-linkedin.svg" alt="logo-linkedin" width="25px"></a></li>
-         <li><a href=""><img src="./Assets/logo-xing.svg" alt="logo-xing" width="25px"></a></li>
-         <li><a href=""><img src="./Assets/logo-facebook.svg" alt="logo-facebook" width="25px"></a></li>
-      </ul>
-      <ul class="copy"> 
-         <li>
-           &copy;Copyrights | All Rights Reserved
-        </li>
-      </ul>
-    </footer>
+            <div class="inputbox">
+                <input type="number" placeholder="Mobile Number" required>
+                <input type="text"  placeholder="Email Subject" required>
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
 
-    <script>
-      const togglebtn = document.getElementById('menu-toggle'); const navlinks = document.getElementById('navlinks');
-      togglebtn.addEventListener('click',() => {navlinks.classlist.toggle('active');});
-    </script>
 </body>
 </html>
